@@ -1,15 +1,7 @@
+"use client"
 import { Button, Typography } from "@mui/material";
-import FetchGql from "./lib/Common";
-import { gql } from "@apollo/client";
 
-export default async function Home() {
-  const data  = await FetchGql.Query(`https://spacex-production.up.railway.app`, gql`
-    query {
-      company {
-        ceo
-      }
-    }
-  `);
+export default function Home() {
 
   return (
     <>
@@ -31,8 +23,6 @@ export default async function Home() {
       <Typography variant="body1">"Nhật Bản" (日本) có hai cách phát âm Nhật là Nihon (にほん) hoặc Nippon (にっぽん). Trước khi 日本 trở thành tên gọi chính thức, Nhật Bản được gọi là Wa (和/ わ/ ワ Wa) hoặc Wakoku (和国 Wakoku).</Typography>
     
       <Typography variant="body1">apolo test</Typography>
-      <Typography variant="body1">{data ? data.company.ceo : "Loading..."}</Typography>
-      
     </>
   );
 }

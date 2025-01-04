@@ -13,8 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "CNC",
-  description: "CNC",
+  title: "CNC"
 };
 
 export default function RootLayout({ children }) {
