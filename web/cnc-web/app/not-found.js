@@ -4,7 +4,7 @@ import { Container, Typography, Button, Box } from '@mui/material';
 export default function NotFound() {
   return (
     <Container
-      maxWidth="false" 
+      maxWidth="false"
       disableGutters
       sx={{
         display: 'flex',
@@ -15,7 +15,7 @@ export default function NotFound() {
         textAlign: 'center',
       }}
     >
-      <Typography variant="h1" component="h1" sx={{ fontWeight: 'bold', mb: 2 }} color='primary' >
+      <Typography variant="h1" component="h1" sx={{ fontWeight: 'bold', mb: 2 }} color="primary">
         404
       </Typography>
       <Typography

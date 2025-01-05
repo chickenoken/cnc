@@ -1,9 +1,9 @@
-import "./globals.css";
+import './globals.css';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { Roboto } from 'next/font/google';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from "./theme";
-import { Container } from "@mui/material";
+import theme from './theme';
+import { CssBaseline } from '@mui/material';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "CNC"
+  title: 'CNC',
 };
 
 export default function RootLayout({ children }) {
@@ -22,9 +22,8 @@ export default function RootLayout({ children }) {
       <body className={roboto.variable}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Container maxWidth="false" disableGutters>
-              {children}
-            </Container>
+            <CssBaseline />
+            {children}
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

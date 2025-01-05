@@ -7,7 +7,7 @@ const getClient = (uri) => {
     apolloClient = new ApolloClient({
       link: new HttpLink({
         uri: uri,
-        fetchOptions: { cache: "no-store" },
+        fetchOptions: { cache: 'no-store' },
       }),
       cache: new InMemoryCache(),
     });
@@ -23,7 +23,7 @@ const FetchGql = {
    * @param {function} onSuccess - Callback to handle the data when the mutation is successful (optional)
    * @param {function} onError - Callback to handle errors (optional)
    */
-  Query: async (uri, param, variables, onSuccess= null, onError= null) => {
+  Query: async (uri, param, variables, onSuccess = null, onError = null) => {
     const client = getClient(uri);
 
     try {
@@ -32,13 +32,13 @@ const FetchGql = {
         variables: variables,
       });
 
-      if(onSuccess) onSuccess(data);
+      if (onSuccess) onSuccess(data);
       else return data;
     } catch (error) {
       if (onError) {
         onError(error);
       } else {
-        console.log("GraphQL Error: ", error);
+        console.log('GraphQL Error: ', error);
       }
     }
   },
