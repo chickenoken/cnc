@@ -22,7 +22,8 @@ export const SideBar = () => {
           alt="logo"
           src="/assets/images/logo.png"
           fill={true}
-          priority={true}
+          placeholder="blur"
+          blurDataURL="/assets/images/logo.png"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </Box>
@@ -81,7 +82,6 @@ export const SideBar = () => {
               </ListItemButton>
             </List>
           </SideItem>
-
 
           <SideItem label="Profile" icon={<HomeIcon />}>
             <List disablePadding>
