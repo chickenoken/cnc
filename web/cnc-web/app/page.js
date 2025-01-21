@@ -30,13 +30,11 @@ export default function Home() {
         What is Lorem Ipsum?
       </Typography>
       <Typography variant="body1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-        galley of type and scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-        passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </Typography>
 
       <Typography variant="body1">也称乱数假文或者哑元文本</Typography>
@@ -46,9 +44,8 @@ export default function Home() {
       </Typography>
 
       <Typography variant="body1">
-        "Nhật Bản" (日本) có hai cách phát âm Nhật là Nihon (にほん) hoặc Nippon (にっぽん). Trước
-        khi 日本 trở thành tên gọi chính thức, Nhật Bản được gọi là Wa (和/ わ/ ワ Wa) hoặc Wakoku
-        (和国 Wakoku).
+        "Nhật Bản" (日本) có hai cách phát âm Nhật là Nihon (にほん) hoặc Nippon (にっぽん). Trước khi 日本 trở thành tên gọi
+        chính thức, Nhật Bản được gọi là Wa (和/ わ/ ワ Wa) hoặc Wakoku (和国 Wakoku).
       </Typography>
 
       <Typography variant="body1">apolo test</Typography>

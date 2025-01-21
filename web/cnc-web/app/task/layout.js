@@ -5,7 +5,7 @@ export default function TaskLayout({ children }) {
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh' }}>
       <SideBar />
-      <Box component="main" sx={{ flexGrow: 1, backgroundColor: 'orange' }}>
+      <Box component="main" sx={{ flexGrow: 1 }}>
         <Container maxWidth={false}>{children}</Container>
       </Box>
     </Box>

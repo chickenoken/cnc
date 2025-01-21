@@ -1,107 +1,108 @@
-import { Box, Drawer, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
-import Image from 'next/image';
+import { Box, Divider, Drawer, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import React from 'react';
-import { SideItem } from './SideItem';
+import { SideItem } from '../common/SideItem';
 import HomeIcon from '@mui/icons-material/Home';
-import { SideHeader } from './SideHeader';
+import { SideHeader } from '../common/SideHeader';
+import { SideCollapseIcon } from '../common/SideCollapseIcon';
 
 export const SideBar = () => {
   return (
-    <Drawer
-      variant="permanent"
-      sx={{
-        width: '240px',
-        '& .MuiDrawer-paper': {
-          width: '240px',
-          boxSizing: 'border-box',
-        },
-      }}
-    >
-      <Box position="relative" sx={{ height: 50, padding: 2 }}>
-        <Image
-          alt="logo"
-          src="/assets/images/logo.png"
-          fill={true}
-          placeholder="blur"
-          blurDataURL="/assets/images/logo.png"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </Box>
-      <Box>
-        <SideHeader subheader="sdsdsdsd">
-          <SideItem label="Profile" icon={<HomeIcon />}>
-            <List disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
+    <SideCollapseIcon>
+      <SideHeader subheader="test header">
+        <SideItem label="Menu parent" icon={<HomeIcon />}>
+          <List disablePadding>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 1" />
+            </ListItemButton>
 
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
-            </List>
-          </SideItem>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
+            
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
 
-          <SideItem label="Profile" icon={<HomeIcon />}>
-            <List disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
 
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
-            </List>
-          </SideItem>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
 
-          <SideItem label="Profile" icon={<HomeIcon />}>
-            <List disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
+          </List>
+        </SideItem>
+      </SideHeader>
 
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
-            </List>
-          </SideItem>
+      <SideHeader subheader="test header 2">
+        <SideItem label="Menu parent" icon={<HomeIcon />}>
+          <List disablePadding>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />{' '}
+              </ListItemIcon>
+              <ListItemText primary="menu 1" />
+            </ListItemButton>
 
-          <SideItem label="Profile" icon={<HomeIcon />}>
-            <List disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
+            
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
 
-              <ListItemButton>
-                <ListItemIcon>
-                  <HomeIcon />
-                </ListItemIcon>
-                <ListItemText primary="test" />
-              </ListItemButton>
-            </List>
-          </SideItem>
-        </SideHeader>
-      </Box>
-    </Drawer>
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
+
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
+
+            <ListItemButton>
+              <ListItemIcon sx={{ minWidth: 35 }}>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="menu 2" />
+            </ListItemButton>
+          </List>
+        </SideItem>
+      </SideHeader>
+    </SideCollapseIcon>
   );
 };
